@@ -1,58 +1,35 @@
 ⚡ Power-Aware Token Trading Simulator
-This project simulates a smart energy trading network using a power-aware model built on top of a graph. Nodes (homes) with surplus energy can transfer tokens to deficit nodes efficiently based on both connectivity and power levels, minimizing cost via a custom Dijkstra’s algorithm.
+A simulation of smart energy token trading between nodes in a power network, optimized by power-aware graph algorithms.
 
+✨ Features
+⚡ Assigns power levels to each node and reweights edge costs accordingly
 
+🔁 Computes optimized token transfers from surplus to deficit nodes
 
-🚀 Features
-Generates a random smart grid graph using NetworkX
+🧠 Uses a custom Dijkstra’s algorithm for power-aware routing
 
-Assigns power levels to each node and reweights edge costs accordingly
+🕸️ Visualizes network graph with energy status color mapping (green = surplus, red = deficit)
 
-Computes optimized token transfers from surplus to deficit nodes
+📋 Step-by-step trade log viewer with CSV/JSON export options
 
-Visualizes network graph with energy status color mapping (green = surplus, red = deficit)
-
-Step-by-step trade log viewer with CSV/JSON export options
-
-Fully interactive Streamlit web interface
-
-
+🌐 Fully interactive Streamlit web interface
 
 🛠️ Tech Stack
-Python 🐍
+🐍 Python
 
-Streamlit 📊
+📊 Streamlit
 
-NetworkX 🔗
+🔗 NetworkX
 
-Matplotlib 🎨
+🎨 Matplotlib
 
-Pandas 🧮
-
-
+🧮 Pandas
 
 🧪 Run Locally
-# Step 1: Clone the repo
+Step 1: Clone the repo
 git clone https://github.com/yourusername/power-aware-token-trading.git
 cd power-aware-token-trading
-
-# Step 2: Create environment
+Step 2: Create environment
 pip install -r requirements.txt
-
-# Step 3: Launch the app
+Step 3: Launch the app
 streamlit run app.py
-
-
-
-🔧 Customize Parameters
-Adjust number of nodes and connection density via sidebar
-
-Manually input net energy values for each node
-
-Walk through trades step by step using ➕ and ➖ buttons
-
-
-📦 Export Options
-Wallet balances after trading (JSON)
-
-Trade logs with paths and costs (CSV)
