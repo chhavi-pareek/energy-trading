@@ -1,43 +1,40 @@
-⚡ Power-Aware Token Trading Simulator
+# ⚡ Power-Aware Token Trading Simulator
 
 A simulation of smart energy token trading between nodes in a power network, optimized by power-aware graph algorithms.
 
-✨ Features
+---
 
-⚡ Assigns power levels to each node and reweights edge costs accordingly
+## ✨ Features
 
-🔁 Optimized token transfers from surplus to deficit nodes
+- ⚡ Assigns power levels to each node and reweights edge costs accordingly
+- 🔁 Computes optimized token transfers from surplus to deficit nodes
+- 🧠 Uses a custom Dijkstra’s algorithm for power-aware routing
+- 🌐 Visualizes network graph with energy status color mapping  
+  (🟢 green = surplus, 🔴 red = deficit)
+- 📋 Step-by-step trade log viewer with CSV/JSON export options
+- 🖥️ Fully interactive Streamlit web interface
 
-🧠 Custom Dijkstra’s algorithm for power-aware routing
+---
 
-🔸️ Energy-status graph coloring (green = surplus, red = deficit)
+## 🛠️ Tech Stack
 
-📋 Step-by-step trade log viewer with CSV/JSON export
+- 🐍 Python  
+- 📊 Streamlit  
+- 🔗 NetworkX  
+- 🎨 Matplotlib  
+- 🧾 Pandas  
 
-🌐 Streamlit-based interactive web UI
+---
 
-🧰 Tech Stack – Python 🐍
+## 🚀 Run Locally
 
-📈 Streamlit
-
-🔗 NetworkX
-
-🎨 Matplotlib
-
-🧮 Pandas
-
-🛠️ Run Locally
-
-Step 1: Clone the repo
-
-git clone https://github.com/yourusername/power-aware-token-trading.git
+```bash
+# Step 1: Clone the repository
+git clone https://github.com/yourusername/power-aware-token-trading.git  
 cd power-aware-token-trading
 
-Step 2: Create environment
-
+# Step 2: Create environment and install dependencies
 pip install -r requirements.txt
 
-Step 3: Launch the app
-
+# Step 3: Launch the Streamlit app
 streamlit run app.py
-
